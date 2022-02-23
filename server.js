@@ -1,4 +1,16 @@
 const http = require('http');
+const url = require('url');
+const path = require('path');
+const fs = require('fs');
+
+const mimeTypes = {
+    "html": "text/html",
+    "js": "text/javascript",
+    "css": "text/css",
+    "jpeg": "image/jpeg",
+    "jpg": "image/jpg",
+    "png": "image/png"
+};
 
 const hostname = '127.0.0.1';
 const port = 1337;
